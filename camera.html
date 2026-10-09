@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Camera Studio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="camera-page">
+
+
+    <div class="camera-container">
+
+
+        <!-- CAMERA VIEW -->
+
+        <video id="video" autoplay playsinline>
+        </video>
+
+
+
+        <!-- SELECTED FRAME OVERLAY -->
+
+        <img id="overlay" class="camera-overlay" alt="Selected Frame">
+
+
+
+        <!-- PHOTO COUNTER -->
+
+        <h2 id="count">
+        </h2>
+
+
+
+        <!-- TAKE PHOTO BUTTON -->
+
+        <button onclick="capture()" class="capture-btn">
+
+            📷 Take Photo
+
+        </button>
+
+
+
+    </div>
+
+
+
+    <!-- HIDDEN CANVAS FOR CAPTURE PROCESS -->
+
+    <canvas id="canvas" style="display:none;">
+    </canvas>
+
+
+
+
+    <script src="js/camera.js"></script>
+
+
+</body>
+
+</html>
